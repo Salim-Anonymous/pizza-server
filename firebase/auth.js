@@ -1,2 +1,3 @@
 import {getAuth} from 'firebase/auth'
-const auth = getAuth();
+import {app} from "./init";
+const auth = getAuth(app);
