@@ -1,10 +1,13 @@
-import Homepage from "./views/Homepage.js";
-import Sidebar from "../components/sidebar.js";
-
-export const router = async ()=>{
+import MainView from "./views/MainView.js";
+import CardView from "./views/CardView.js";
+export const mainContentRouter = async ()=>{
     const routes = [
         {path:"/",
-            view:Homepage
+            view:MainView
+        },
+        {
+            path:"/cart",
+            view:CardView
         }
     ]
 
@@ -26,7 +29,5 @@ export const router = async ()=>{
     }
     const view = new match.route.view();
     console.log(view);
-
-    document.querySelector("#app").innerHTML = await view.getHtml();
-    document.querySelector('#navbar').innerHTML = await new Sidebar().getHtml();
+    document.querySelector("#content").innerHTML = await view.getHtml();
 }
