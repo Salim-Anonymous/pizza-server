@@ -5,26 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizza Server</title>
   <link href="/static/css/index.css" rel="stylesheet">
+
+  <!--Fonts amd simple icons-->
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://kit.fontawesome.com/5f2543bfe6.js" crossorigin="anonymous"></script>
+  <script src="/static/components/datasets/store.js" async></script>
+  <!--Google Apis-->
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <script type="module" src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-<div class='navbar'>
-    <header class="nav_head">
+<!---- this is where the sidebar is initialized---->
+<div id="navbar" >
 
-    </header>
-    <nav class="navbox">
-        <ul class="nav_link">
-            <li class="nav-li">
-                <a class="nav-link" data-link href="/">Homepage</a>
-            </li>
-            <li class="nav-li">
-                <a class="nav-link" data-link href="/app">app</a>
-            </li>
-        </ul>
-    </nav>
-    <footer class="nav_foot">
-
-    </footer>
 </div>
+
+<!--- this is where our SPA application starts--->
 <div class="app" id='app'>
 
 </div>
