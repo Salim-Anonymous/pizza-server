@@ -1,3 +1,3 @@
-GET localhost:3000/api/users HTTP/1.1
-Host: localhost:3000
+GET /api/pizza HTTP/1.1
+Host: localhost:8080
 Accept: application/json
